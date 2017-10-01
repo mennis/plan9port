@@ -18,16 +18,16 @@ matrix:
       osx_image: xcode6.4
     - os: linux
       env:
-        - secure: "LYlCyAVaHBfd607667VbXInW6/tryXaCIolXNlbnoJuuJ7eHWSgdJi1/MNsxC53TJqGJ1CXtvL/b3BV0WSIMuyJ2YYg01fDcbt3OlIeWCHmWJFrK2J/F9M25vWKz7setzSijbV5cvG68QAI8vyYGG/f6ge8ePomXvyQoV/Hsa1D9i4P2dunneejWVnG1IxalNsca077q72is2MUPFGBreMEirqyLrEYv6jc1y51ihedOVBhsk89Ar4Oc75vIwMDCWlSdyaVgg2Z+8nKGLHncHDaRKDA4HIMPA3dyCRSanS7sMrLj1+VaxixqEA5uFp9c++Z2ZWCcrlNCgdRSbBErnIToiL2koDUBvIA5gQ56xrQ3Li9g2jrLDbCNp46ey3r9T9UJRgoG/DwZFt7BVTyb1Qrz44iNGAtOly90wKTLFzMA1HYa5NcysVYWUOmTS7cFVPevddHH59O841sycvPO0bJDFHCx5LqI6RialRWZi//BVnh+u3JAe4lGGPCV0V2o3Jsj1LDmYW8+LaO/M8d+pxRUgnpuL0qESOJx/TuJOVbWnFCquBUaiToO3HgkT5ZAFAhfViNQBJsddGFDg4yu04R2SobO9/dj59zdgmibJaQoyd0aG7/1OXmXy6dF5xee8cmMJI5WCqITloV1SxUDQ8FG96jsnAIwRbL74LI4BSc="
+        - secure: "BW2vIKQQihbW5Mt9zZwvA+E8t+c/LluCZsKTqbMvl92HwIUEWad05FqP1lT5tzhKE5rBYykgpL3Z7LQKwCxeZzQb+6dVm9YOCGf1T/uKoIig0vrifKmqgOezHV69VxYP3Jez/QvEJMHFgm9HtIkvKUL5sXX7cfL/KjfXctimcvR71oG1WnzUZLMDYRpoFrd/JFX9O1EXUvOJNYN5zwwOLV4AANw0s/7WBHqqkBcO/zcJn/zsYAy5tjoR4TnPdlyvgfLMVY2CA5ja4OfCKr6TYICVyueKSavgQPaFSh+jN8DIpSKm3k1Gzg9Qkb5Riz1rVdSnnfbhE5ysac/6tF/WZCN457S+lvpMO6H5l+7/Wj3C95WtJ6SHum1mjgDDgD+jhxal0t9sKPXwg3mhlGRmYfH4LVjzSFIjzPHXAN5rNJ3o8AedIKVqIAJ0fod3AA6s/wx6pPS2YeRi57gZPSAGFQRAnsrOHiRAv2bfb9q6meAFJeLCglqgjEsCeRZ3J5oOXdBYIQ8S++fc3ULTzv4ovpSAkSUTLetuYmGqstL81sePZ+K5HsS7B/0PtwjEaXTj0ZTPSv1RY2Kms5hwAPLEQLcG2ZfbarDYNN0iefFrFNqUWMsghoEuG2XEG/dAkjQOn34CSTxrJZRYlW+bIpZ7UldPGeuIFpr/pujZu1cdlok="
       addons:
         coverity_scan:
           project:
-            name: "9fans/plan9port"
+            name: "mennis/plan9port"
             description: "Build submitted via Travis CI"
-          notification_email: 0intro@gmail.com
+          notification_email: mennis@corvus.net
           build_command: "./INSTALL"
           branch_pattern: master
-
+          
 before_script:
   - if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then brew update; fi
   - if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then brew cask install Caskroom/cask/osxfuse; fi
