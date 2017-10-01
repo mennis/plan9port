@@ -191,7 +191,7 @@ yylex(void)
 	struct tree *t;
 	yylval.tree = 0;
 	/*
-	 * Embarassing sneakiness:  if the last token read was a quoted or unquoted
+	 * Embarrassing sneakiness:  if the last token read was a quoted or unquoted
 	 * WORD then we alter the meaning of what follows.  If the next character
 	 * is `(', we return SUB (a subscript paren) and consume the `('.  Otherwise,
 	 * if the next character is the first character of a simple or compound word,

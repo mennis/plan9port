@@ -218,7 +218,7 @@ torgbv(Rawimage *i, int errdiff)
 					 * no color that can guarantee zero error at the edge.
 					 * Therefore we must clamp explicitly rather than by assuming
 					 * an upper error bound of CLAMPOFF.  The performance difference
-					 * is miniscule anyway.
+					 * is minuscule anyway.
 					 */
 					if(r < 0)
 						r = 0;

@@ -41,7 +41,7 @@ d_free(dest *dp)
 /* The following routines manipulate an ordered list of items.  Insertions
  * are always to the end of the list.  Deletions are from the beginning.
  *
- * The list are circular witht the `head' of the list being the last item
+ * The list are circular with the `head' of the list being the last item
  * added.
  */
 
@@ -197,7 +197,7 @@ d_to(dest *list)
 	return unescapespecial(s);
 }
 
-/* expand a String of destinations into a linked list of destiniations */
+/* expand a String of destinations into a linked list of destinations */
 extern dest *
 s_to_dest(String *sp, dest *parent)
 {

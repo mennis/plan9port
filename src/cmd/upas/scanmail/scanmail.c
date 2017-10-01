@@ -142,7 +142,7 @@ main(int argc, char *argv[])
 	qdir = a;
 	sender = argv[2];
 
-		/* copy the rest of argv, acummulating the recipients as we go */
+		/* copy the rest of argv, accumulating the recipients as we go */
 	for(i = 0; argv[i]; i++){
 		*a++ = argv[i];
 		if(i < 4)	/* skip queue, 'mail', sender, dest sys */

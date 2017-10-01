@@ -194,7 +194,7 @@ void regerror(char *err)
 }
 
 /*
- *  check lower case version of address agains patterns
+ *  check lower case version of address against patterns
  */
 static Pattern*
 checkaddr(char *arg)

@@ -35,7 +35,7 @@ char **argv;
 
     XMapWindow(dpy, window);
 
-    /* set this to false to make ShowEvent take up less vertival space */
+    /* set this to false to make ShowEvent take up less vertical space */
     use_separate_lines = True;
 
     while (1) {

@@ -1597,7 +1597,7 @@ logdhcpout(Req *rp, char *type)
 
 /*
  *  if we get behind, it's useless to try answering since the sender
- *  will probably have retransmitted with a differnt sequence number.
+ *  will probably have retransmitted with a different sequence number.
  *  So dump all the last message in the queue.
  */
 void ding(void *x, char *msg)

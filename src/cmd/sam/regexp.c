@@ -61,7 +61,7 @@ static	Rangeset sempty;
 #define	RBRA		(OPERATOR+1)	/* Right bracket, ) */
 #define	LBRA		(OPERATOR+2)	/* Left bracket, ( */
 #define	OR		(OPERATOR+3)	/* Alternation, | */
-#define	CAT		(OPERATOR+4)	/* Concatentation, implicit operator */
+#define	CAT		(OPERATOR+4)	/* Concatenation, implicit operator */
 #define	STAR		(OPERATOR+5)	/* Closure, * */
 #define	PLUS		(OPERATOR+6)	/* a+ == aa* */
 #define	QUEST		(OPERATOR+7)	/* a? == a|nothing, i.e. 0 or 1 a's */

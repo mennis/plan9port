@@ -117,8 +117,8 @@ typedef struct Job
 	Node		*n;	/* list of node targets */
 	char		*stem;
 	char		**match;
-	Word		*p;	/* prerequistes */
-	Word		*np;	/* new prerequistes */
+	Word		*p;	/* prerequisites */
+	Word		*np;	/* new prerequisites */
 	Word		*t;	/* targets */
 	Word		*at;	/* all targets */
 	int		nproc;	/* slot number */

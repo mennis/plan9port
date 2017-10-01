@@ -205,7 +205,7 @@ threadmain(int argc, char *argv[])
 }
 
 /*
- *  if a mount point is specified, set the cs extention to be the mount point
+ *  if a mount point is specified, set the cs extension to be the mount point
  *  with '_'s replacing '/'s
  */
 void

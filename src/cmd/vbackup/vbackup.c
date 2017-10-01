@@ -59,7 +59,7 @@ struct WriteReq
 Biobuf	bscores;		/* biobuf filled with block scores */
 int		debug;		/* debugging flag (not used) */
 Disk*	disk;			/* disk being backed up */
-RWLock	endlk;		/* silly synchonization */
+RWLock	endlk;		/* silly synchronization */
 int		errors;		/* are we exiting with an error status? */
 int		fastwrites;		/* do not write blocks already on server */
 int		fsscanblock;	/* last block scanned */

@@ -107,7 +107,7 @@ up_bind(dest *destp, message *mp, int checkforward)
 		}
 	}
 
-	/* mark remaining comands as "forwarding loops" */
+	/* mark remaining commands as "forwarding loops" */
 	for (dp = d_rm(&list[li]); dp != 0; dp = d_rm(&list[li])) {
 		dp->status = d_loop;
 		d_same_insert(&bound, dp);

@@ -277,7 +277,7 @@ dnage(DN *dp)
 #define TARGET 4000
 
 /*
- *  periodicly sweep for old records and remove unreferenced domain names
+ *  periodically sweep for old records and remove unreferenced domain names
  *
  *  only called when all other threads are locked out
  */
@@ -468,7 +468,7 @@ putactivity(void)
 	assert(dnvars.active >= 0); /* "dnvars.active %d", dnvars.active */;
 
 	/*
-	 *  clean out old entries and check for new db periodicly
+	 *  clean out old entries and check for new db periodically
 	 */
 	if(dnvars.mutex || (needrefresh == 0 && dnvars.active > 0)){
 		unlock(&dnvars.lk);

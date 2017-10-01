@@ -285,7 +285,7 @@ funnies(int stl, int lin)
 	int	c, s, pl, lwid, dv, lf, ct;
 	char	*fn, *ss;
 
-	Bprint(&tabout, ".mk ##\n");	 /* rmember current vertical position */
+	Bprint(&tabout, ".mk ##\n");	 /* remember current vertical position */
 	Bprint(&tabout, ".nr %d \\n(##\n", S1);		 /* bottom position */
 	for (c = 0; c < ncol; c++) {
 		ss = table[lin][c].col;

@@ -14,7 +14,7 @@
  * but not vice-versa.
  * 
  * A vac file is one or two venti files.  Plain data files are one venti file,
- * while directores are two: a venti data file containing traditional
+ * while directories are two: a venti data file containing traditional
  * directory entries, and a venti directory file containing venti 
  * directory entries.  The traditional directory entries in the data file
  * contain integers indexing into the venti directory entry file.

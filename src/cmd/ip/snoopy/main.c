@@ -930,7 +930,7 @@ printhelp(char *name)
 }
 
 /*
- *  demultiplex to next prototol header
+ *  demultiplex to next protocol header
  */
 void
 demux(Mux *mx, ulong val1, ulong val2, Msg *m, Proto *def)

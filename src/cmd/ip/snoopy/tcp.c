@@ -112,7 +112,7 @@ p_filter(Filter *f, Msg *m)
 enum
 {
 	URG		= 0x20,		/* Data marked urgent */
-	ACK		= 0x10,		/* Aknowledge is valid */
+	ACK		= 0x10,		/* Acknowledge is valid */
 	PSH		= 0x08,		/* Whole data pipe is pushed */
 	RST		= 0x04,		/* Reset connection */
 	SYN		= 0x02,		/* Pkt. is synchronise */
